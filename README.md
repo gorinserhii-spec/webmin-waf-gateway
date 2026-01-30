@@ -80,8 +80,8 @@ sudo tail -n 5 /var/log/nginx/error.log | grep "ModSecurity" | sed 's/$/<br>/'
 ## 🛡️ Security Testing
 The system was stress-tested using common attack vectors:
 
-1. SQL Injection: `https://server:8443/?id=1 AND 1=1` -> BLOCKED (403)
-2. XSS Attempt: `https://server:8443/?q=<script>alert(1)</script>` -> BLOCKED (403)
+1. **SQL Injection:** `https://server:8443/?id=1 AND 1=1` **-> BLOCKED (403)**
+2. **XSS Attempt:** `https://server:8443/?q=<script>alert(1)</script>` **-> BLOCKED (403)**
 
 ---
 
